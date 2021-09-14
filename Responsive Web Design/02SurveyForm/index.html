@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC: Survey Form</title>
+    <link rel="stylesheet" href="style.min.css">
+</head>
+
+<body>
+    <div class="container" id="main">
+        <h1 id="title">Umfrage</h1>
+        <p id="description">Danke, dass du dir die Zeit nimmst.</p>
+        <div class="form-container">
+            <form action="#" id="survey-form">
+                <label class="bigger" for="name" id="name-label">Name</label><br>
+                <input class="label" type="text" id="name" name="name" placeholder="Dein Name" required><br>
+                <label class="bigger" for="email" id="email-label">Email</label><br>
+                <input class="label" type="email" id="email" name="email" placeholder="Deine Mailadresse" required><br>
+                <label class="bigger" for="number" id="number-label">Alter (optional)</label><br>
+                <input class="label" type="number" min="15" max="99" id="number" name="number" placeholder="Alter"><br>
+                <label class="bigger" for="anstellung">Welche Option beschreibt am besten deine aktuelle
+                    Anstellung?</label><br>
+                <select name="anstellung" id="dropdown">
+                    <option value="none">Wähle</option>
+                    <option value="student">Student</option>
+                    <option value="fulltimejob">Vollzeitarbeit</option>
+                    <option value="fulltimelearner">Vollzeitlerner</option>
+                    <option value="prefernottosay">Sage ich nicht</option>
+                    <option value="other">Etwas anderes</option>
+                </select><br>
+                <label class="bigger" for="recommend">Würdest du CodeCamp weiterempfehlen?</label><br>
+                <input type="radio" value="definitely" name="recommend" id="definitely">
+                <label for="definitely">Auf jeden Fall</label><br>
+                <input type="radio" value="maybe" name="recommend" id="maybe">
+                <label for="maybe">Vielleicht</label><br>
+                <input type="radio" value="notsure" name="recommend" id="notsure">
+                <label for="notsure">Bin mir nicht sicher</label><br>
+                <label class="bigger" for="anstellung">Welche Option beschreibt am besten deine aktuelle
+                    Anstellung?</label><br>
+                <select name="feature" id="feature">
+                    <option value="none">Wähle</option>
+                    <option value="challenges">Chellanges</option>
+                    <option value="projects">Projekte</option>
+                    <option value="community">Community</option>
+                    <option value="opensource">OpenSource</option>
+                </select><br>
+                <label class="bigger" for="improve">Was würdest du gerne Verbessern? <small>(Klick alles an, was
+                        zutrift)</small></label><br>
+                <input type="checkbox" id="Front-end_Projects" name="improve" value="Front-end_Projects">
+                <label for="improve">Front-end Projects</label><br>
+                <input type="checkbox" id="Back-end_Projects" name="improve" value="Back-end_Projects">
+                <label for="improve">Back-end Projects</label><br>
+                <input type="checkbox" id="Data_Visualization" name="improve" value="Data_Visualization">
+                <label for="improve">Data Visualization</label><br>
+                <input type="checkbox" id="Challenges" name="improve" value="Challenges">
+                <label for="improve">Challenges</label><br>
+                <input type="checkbox" id="Open_Source_Community" name="improve" value="Open_Source_Community">
+                <label for="improve">Open Source Community</label><br>
+                <input type="checkbox" id="Gitter_help_rooms" name="improve" value="Gitter_help_rooms">
+                <label for="improve">Gitter help rooms</label><br>
+                <input type="checkbox" id="Videos" name="improve" value="Videos">
+                <label for="improve">Videos</label><br>
+                <input type="checkbox" id="City_Meetups" name="improve" value="City_Meetups">
+                <label for="improve">City Meetups</label><br>
+                <input type="checkbox" id="Wiki" name="improve" value="Wiki">
+                <label for="improve">Wiki</label><br>
+                <input type="checkbox" id="Forum" name="improve" value="Forum">
+                <label for="improve">Forum</label><br>
+                <input type="checkbox" id="Additional_Courses" name="improve" value="Additional_Courses">
+                <label for="improve">Additional Courses</label><br>
+                <label class="bigger" for="comment">Irgendwelche Kommentare oder Vorschläge?</label><br>
+                <textarea name="comment" id="comment" cols="50" rows="5"></textarea><br>
+                <input id="submit" type="submit">
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

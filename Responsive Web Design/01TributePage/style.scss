@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 20vh;
+    background-image: url("https://lastfm.freetls.fastly.net/i/u/770x0/1c2b7ff45b6446b29790078d6406c712.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    h1{
+        padding-top: 3vh;
+    }
+}
+
+main{
+    background-color: #75767A;
+    color: #efefef;
+    padding-bottom: 2vh;
+}
+
+footer{
+    height: 4vh;
+    background-color: #829234;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    .col{
+        width: 50%;
+        img{
+            display: block;
+            justify-self: center;
+            border-radius: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 20rem;
+        }
+    }
+}
+
+.container{
+    display: block;
+    margin: 0 20%;
+}
+
+section{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    a{
+        color: #efefef;
+        text-decoration: none;
+    }
+}
+
+h1,h2,h3,h4,h5,h6{
+    text-align: center;
+}
